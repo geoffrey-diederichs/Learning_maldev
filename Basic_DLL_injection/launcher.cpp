@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <Windows.h>
-#include <TlHelp32.h>
+#include <windows.h>
+#include <tlhelp32.h>
 
 int getPIDbyProcName(const char* procName) {
     int pid = 0;
@@ -20,7 +20,7 @@ int getPIDbyProcName(const char* procName) {
     return pid;
 }
 
-char DLL [] = "C:	estdll.dll";
+char DLL [] = "C:\\dll.dll";
 unsigned int dllLen = sizeof(DLL) + 1;
 
 typedef LPVOID memory_buffer;
