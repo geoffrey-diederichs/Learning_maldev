@@ -1,6 +1,6 @@
 # RED TEAM TOOLS
 
-Red team tools I'm working on. Some serious, some used as pranks. Each folder contains another project, they will have their own readme explaining how to use the project.
+Red team tools I'm working on. Each folder contains another project, they will have their own readme explaining how to use the project.
 
 ## Content
 
