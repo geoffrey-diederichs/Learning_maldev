@@ -1,4 +1,4 @@
-#include <windows.h>
+#include <Windows.h>
 #pragma comment(lib, "user32.lib")
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD nReason, LPVOID lpReserved)
