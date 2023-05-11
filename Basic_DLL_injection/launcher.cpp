@@ -20,7 +20,7 @@ int getPIDbyProcName(const char* procName) {
     return pid;
 }
 
-char DLL[] = "C:\\Users\\geoff\\Documents\\dll.dll";
+char DLL [] = "C:	estdll.dll";
 unsigned int dllLen = sizeof(DLL) + 1;
 
 typedef LPVOID memory_buffer;
