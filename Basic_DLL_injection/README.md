@@ -1,12 +1,13 @@
 # Basic DLL injection
 
-The launcher will look for an ongoing instance of notepad.exe. If found, it will then load the dll library (using the path given in the launcher's code) and attach it to the ongoing notepad. Doing so will execute the DDL_PROCESS_ATTACH section of the dll which opens a message box.
+The launcher will look for an ongoing instance of notepad.exe. If found, it will load the dll library (using the path given in the launcher's code) and attach it to the ongoing notepad. Doing so will execute the DDL_PROCESS_ATTACH section of the dll which opens a message box.
 
 All the code used is in /source_code, /compiled contains a compiled version of it.
 
 ## How to use
 
 When using the compiled version the dll needs to be stored at :
+
 C:\dll.dll
 
 You can change that by modifiyng the dll's path at line 23 of launcher.cpp.
