@@ -4,7 +4,7 @@ The launcher will look for an ongoing instance of notepad.exe. If found, it will
 
 ![Watch a demo here](https://raw.githubusercontent.com/geoffrey-diederichs/Red_team_tools/main/Basic_DLL_injection/Demo/basic_dll_injection_demo.mp4)
 
-All the code used is in /source_code, /compiled contains a compiled version of it, /demos contains a recording of the code in execution.
+All the code used is in /source_code, /compiled contains a compiled version of it, /demo contains a recording of the code in execution.
 
 ## How to use
 
