@@ -22,4 +22,4 @@ $ x83_64-w64-mingw32-gcc launcher.cpp -o launcher.exe -fpermissive
 
 Make sure the dll is at the correct path (the launcher can be executed from anywhere) and just execute the launcher.
 
-[![video]](https://github.com/geoffrey-diederichs/Red_team_tools/blob/main/Basic_DLL_injection/Demo/basic_dll_injection_demo.webm)
+[![Demo](https://github.com/geoffrey-diederichs/Red_team_tools/blob/main/Basic_DLL_injection/Demo/windows.jpg)](https://github.com/geoffrey-diederichs/Red_team_tools/blob/main/test.mp4)
