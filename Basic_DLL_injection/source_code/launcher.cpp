@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <Windows.h>
-#include <TlHelp32.h>
+#include <windows.h>
+#include <tlhelp32.h>
 
 int getPIDbyProcName(const char* procName) {
     int pid = 0;
