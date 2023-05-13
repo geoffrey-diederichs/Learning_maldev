@@ -2,6 +2,8 @@
 
 The launcher will look for an ongoing instance of notepad.exe. If found, it will load the dll library (using the path given in the launcher's code) and attach it to the ongoing notepad. Doing so will execute the DDL_PROCESS_ATTACH section of the dll which opens a message box.
 
+![Watch a demo here](https://github.com/geoffrey-diederichs/Red_team_tools/blob/main/Basic_DLL_injection/Demo/basic_dll_injection_demo.mp4)
+
 All the code used is in /source_code, /compiled contains a compiled version of it, /demos contains a recording of the code in execution.
 
 ## How to use
@@ -21,5 +23,3 @@ $ x83_64-w64-mingw32-gcc launcher.cpp -o launcher.exe -fpermissive
 ```
 
 Make sure the dll is at the correct path (the launcher can be executed from anywhere) and just execute the launcher.
-
-[![Demo](https://github.com/geoffrey-diederichs/Red_team_tools/blob/main/Basic_DLL_injection/Demo/windows.jpg)](https://github.com/geoffrey-diederichs/Red_team_tools/blob/main/Basic_DLL_injection/Demo/test.mp4)
