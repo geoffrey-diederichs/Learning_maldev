@@ -21,7 +21,7 @@ def decode(code: bytearray) -> bytearray:
     return decoded
 
 
-code = b'\x12\x26\x70'
+code = b'<SHELLCODE_TO_REPLACE>'
 
 if len(sys.argv) > 1:
     if sys.argv[1] == "0":

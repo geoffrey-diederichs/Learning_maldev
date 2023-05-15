@@ -6,7 +6,7 @@ int encode();
 int decode();
 int print_bytes(char *str);
 
-unsigned char code[] =  "\x12\x26\x70";
+unsigned char code[] =  "<SHELLCODE_TO_REPLACE>";
 int code_size = sizeof(code);
 
 int main(int argc, char* argv[])
