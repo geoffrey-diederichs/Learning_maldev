@@ -6,7 +6,7 @@ For example :
 
 ```sh
 $ shellcode='\\x12\\x34\\x56'
-$ sed -i "s/<SHELLCODE_TO_REPLACE>/${test}/" rolling_xor.py
+$ sed -i "s/<SHELLCODE_TO_REPLACE>/${shellcode}/" rolling_xor.py
 $ python3 rolling_xor.py 0
 \x12\x26\x70
 $ sed -i "s/${shellcode}/<SHELLCODE_TO_REPLACE>/" rolling_xor.py
