@@ -1,0 +1,3 @@
+# Rolling XOR cipher
+
+Work in progress...
