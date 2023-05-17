@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
 			decode();
 	}
 	
-	return 1;
+	return 0;
 }
 
 int strrev(char *str, int len)
