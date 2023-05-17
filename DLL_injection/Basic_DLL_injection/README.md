@@ -1,25 +1,24 @@
 # Basic DLL injection
 
+This is an example of how to execute a DLL injection in Windows. All the code used is in /Source_code, /Demo contains a recording of the code in execution.
+
 The launcher will look for an ongoing instance of notepad.exe. If found, it will load the dll library (using the path given in the launcher's code) and attach it to the ongoing notepad. Doing so will execute the DDL_PROCESS_ATTACH section of the dll which opens a message box.
 
 ![Watch a demo here](https://raw.githubusercontent.com/geoffrey-diederichs/Red_team_tools/main/Basic_DLL_injection/Demo/basic_dll_injection_demo.mp4)
 
-All the code used is in /source_code, /compiled contains a compiled version of it, /demo contains a recording of the code in execution.
-
 ## How to use
 
-When using the compiled version the dll needs to be stored at :
-
-C:\dll.dll
-
-You can change that by modifiyng the dll's path at line 23 of launcher.cpp.
-You can then compile those files under linux using mingw-w64. For example with kali :
+Replace <PATH_TO_REPLACE> with the full path to where the dll will be stored in launcher.c at line 23. Use \\ instead of \. For example :
 
 ```sh
-$ sudo apt update && sudo apt upgrade
-$ sudo apt install mingw-w64
-$ x83_64-w64-mingw32-gcc dll.cpp -o dll.dll -shared
-$ x83_64-w64-mingw32-gcc launcher.cpp -o launcher.exe -fpermissive
+char DLL[] = "C:\\Users\\example\\dll.dll";
 ```
 
-Make sure the dll is at the correct path (the launcher can be executed from anywhere) and just execute the launcher.
+To compile the dll with gcc, use the -shared flag. For example under linux :
+
+```sh
+$ x86_64-w64-mingw32-gcc dll.c -o dll.dll -shared
+$ x86_64-w64-mingw32-gcc launcher.c -o launcher.exe 
+```
+
+Then, make sure the dll is at the correct path (the launcher can be executed from anywhere) and just execute the launcher.

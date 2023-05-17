@@ -20,7 +20,7 @@ int getPIDbyProcName(const char* procName) {
     return pid;
 }
 
-char DLL [] = "C:\\dll.dll";
+char DLL [] = "<PATH_TO_REPLACE>";
 unsigned int dllLen = sizeof(DLL) + 1;
 
 typedef LPVOID memory_buffer;
