@@ -1,6 +1,6 @@
 # Rolling XOR cipher
 
-Takes a message and encodes or decodes it using a rolling XOR cipher.
+Takes a message and encodes or decodes it using a rolling XOR cipher. Coded in both C and python.
 
 # How to use
 

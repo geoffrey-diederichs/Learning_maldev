@@ -26,6 +26,8 @@ if len(sys.argv) > 1:
         result = encode(bytearray(message))
     elif sys.argv[1] == "1":
         result = decode(bytearray(message))
+    else:
+        quit()
 else:
     quit()
 
