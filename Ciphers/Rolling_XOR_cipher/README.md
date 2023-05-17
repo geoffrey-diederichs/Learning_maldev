@@ -2,12 +2,14 @@
 
 Takes a message and encodes or decodes it using a rolling XOR cipher.
 
+# How to use
+
 First modify <MESSAGE_TO_REPLACE> inside the code. Then to encode it, run the program with 0 as argument. To decode it, run the program with 1 as argument.
 
 The programs will give you 3 outputs : the number of bytes in the result, the result in bytes and the result in utf-8 or ascii encoding (which will frequently be nonsense).
 The programs can also take shellcodes as input as shown below.
 
-For example :
+# Example
 
 ```sh
 $ message='testing_this'
