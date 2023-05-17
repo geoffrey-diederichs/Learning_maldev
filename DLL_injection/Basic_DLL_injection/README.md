@@ -4,7 +4,7 @@ This is an example of how to execute a DLL injection in Windows. All the code us
 
 The launcher will look for an ongoing instance of notepad.exe. If found, it will load the dll library (using the path given in the launcher's code) and attach it to the ongoing notepad. Doing so will execute the DDL_PROCESS_ATTACH section of the dll which opens a message box.
 
-![Watch a demo here]([https://raw.githubusercontent.com/geoffrey-diederichs/Red_team_tools/main/Basic_DLL_injection/Demo/basic_dll_injection_demo.mp4](https://raw.githubusercontent.com/geoffrey-diederichs/Red_team_tools/main/DLL_injection/Basic_DLL_injection/Demo/basic_dll_injection_demo.mp4))
+![Watch a demo here](https://raw.githubusercontent.com/geoffrey-diederichs/Red_team_tools/main/DLL_injection/Basic_DLL_injection/Demo/basic_dll_injection_demo.mp4)
 
 ## How to use
 
