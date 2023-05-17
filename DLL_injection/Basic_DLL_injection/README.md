@@ -10,7 +10,7 @@ The launcher will look for an ongoing instance of notepad.exe. If found, it will
 
 Replace <PATH_TO_REPLACE> with the full path to where the dll will be stored in launcher.c at line 23. Use \\ instead of \. For example :
 
-```sh
+```C
 char DLL[] = "C:\\Users\\example\\dll.dll";
 ```
 
