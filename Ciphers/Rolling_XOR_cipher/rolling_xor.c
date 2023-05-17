@@ -35,7 +35,7 @@ int strrev(char *str, int len)
 
 int encode()
 {
-	char encoded[code_size];	
+	unsigned char encoded[code_size];	
 	
 	encoded[0] = code[0];
 	int i;
