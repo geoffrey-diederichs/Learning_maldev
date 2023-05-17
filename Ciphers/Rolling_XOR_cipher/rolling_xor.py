@@ -21,7 +21,7 @@ def decode(message: bytearray) -> bytearray:
     return decoded
 
 
-message = b'\x12\x26\x70'
+message = b'<MESSAGE_TO_REPLACE>'
 
 if len(sys.argv) > 1:
     if sys.argv[1] == "0":
@@ -31,6 +31,6 @@ if len(sys.argv) > 1:
 else:
     quit()
 
-result_formated = "\\x"+"\\x".join(str(binascii.hexlify(result, '-')).replace("b","").replace("'", "").split('-'))
+result_formated = "\\x"+"\\x".join(str(binascii.hexlify(result, '-'))[1:].replace("'", "").split('-'))
 
 print(len(result), " bytes\n", result_formated, "\n", bytes(result).decode('utf-8'), sep='')

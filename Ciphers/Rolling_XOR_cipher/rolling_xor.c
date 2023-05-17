@@ -6,7 +6,7 @@ int decode();
 int strrev(char *str, int len);
 int print_result(char *str, int len);
 
-unsigned char message[] =  "tbv)]5\/";
+unsigned char message[] =  "<MESSAGE_TO_REPLACE>";
 int message_size = sizeof(message);
 
 int main(int argc, char* argv[])
