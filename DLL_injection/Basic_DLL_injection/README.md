@@ -13,7 +13,7 @@ When using the compiled version the dll needs to be stored at :
 C:\dll.dll
 
 You can change that by modifiyng the dll's path at line 23 of launcher.cpp.
-You can then compile those files under linux using mingw-w64. For example with debian :
+You can then compile those files under linux using mingw-w64. For example with kali :
 
 ```sh
 $ sudo apt update && sudo apt upgrade
