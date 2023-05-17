@@ -15,3 +15,5 @@ $ sed -i "s/<SHELLCODE_TO_REPLACE>/${shellcode}/" rolling_xor.py
 $ python3 rolling_xor.py 1
 \x12\x34\x56
 ```
+
+The C code curently has issues with null characters because of strlen, will fix that.
