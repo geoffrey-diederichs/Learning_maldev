@@ -21,4 +21,4 @@ $ x86_64-w64-mingw32-gcc dll.c -o dll.dll -shared
 $ x86_64-w64-mingw32-gcc launcher.c -o launcher.exe 
 ```
 
-Then, make sure the dll is at the correct path (the launcher can be executed from anywhere) and just execute the launcher.
+Then, make sure the dll is at the correct path (the launcher can be executed from anywhere), spawn a notepad and execute the launcher.
