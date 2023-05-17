@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <string.h>
 
-int strrev(char *str);
+int strrev(char *str, int len);
 int encode();
 int decode();
-int print_bytes(char *str);
+int print_bytes(char *str, int len);
 
 unsigned char code[] =  "<SHELLCODE_TO_REPLACE>";
 int code_size = sizeof(code);
 
 int main(int argc, char* argv[])
 {
-	if (argc > 0) {
+	if (argc > 1) {
 		if (strcmp(argv[1], "0") == 0)
 			encode();
 		else if (strcmp(argv[1], "1") == 0)
@@ -21,10 +21,8 @@ int main(int argc, char* argv[])
 	return 1;
 }
 
-int strrev(char *str)
+int strrev(char *str, int len)
 {
-	int len = strlen(str);
-	
 	int i, temp;
 	for (i = 0; i < len/2; i++) {
 		temp = str[i];
@@ -45,31 +43,30 @@ int encode()
 		encoded[i] = code[i] ^ encoded[i-1];
 	encoded[i] = '\0';
 
-	print_bytes(encoded);
+	print_bytes(encoded, code_size-1);
 
 	return 0;	
 }
 
 int decode()
 {
-	strrev(code);
+	strrev(code, code_size-1);
 	unsigned char decoded[code_size];
 
-	int i, len = strlen(code);
-	for (i = 0; i < len-1; i++) 
+	int i;
+	for (i = 0; i < code_size-2; i++) 
 		decoded[i] = code[i] ^ code[i+1];
 	decoded[i] = code[i];
 	decoded[++i] = '\0';
-	strrev(decoded);
+	strrev(decoded, code_size-1);
 
-	print_bytes(decoded);
+	print_bytes(decoded, code_size-1);
 	
 	return 0;
 }
 
-int print_bytes(char *str)
+int print_bytes(char *str, int len)
 {
-	int len = strlen(str);
 	printf("%d bytes\n", len);                 		
 	
 	int i;
