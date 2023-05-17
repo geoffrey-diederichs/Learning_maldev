@@ -3,7 +3,6 @@ import binascii
 
 def encode(message: bytearray) -> bytearray :
     encoded = bytearray([message.pop(0)])
-    
     for i in range(0, len(message)):
         encoded.append(message[i] ^ encoded[i])
 
@@ -12,12 +11,11 @@ def encode(message: bytearray) -> bytearray :
 def decode(message: bytearray) -> bytearray:
     message.reverse()
     decoded = bytearray()
-
     for i in range(0, len(message)-1):
         decoded.append(message[i] ^ message[i+1])
     decoded.append(message[len(message)-1])
-
     decoded.reverse()
+
     return decoded
 
 

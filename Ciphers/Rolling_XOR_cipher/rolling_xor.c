@@ -21,8 +21,6 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
-
-
 int encode()
 {
 	unsigned char encoded[message_size];	
