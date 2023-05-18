@@ -6,6 +6,11 @@ Takes a message and encodes or decodes it using a XOR cipher. Coded in both C an
 
 First modify <MESSAGE_TO_REPLACE> inside the code (the programs can also take shellcodes as inputs as shown below), and enter a key by modifying <KEY_TO_REPLACE>. Then run the program. Since this is a symmetric-key algorithm, running this program once more using the output (with the same key) will give you the initial message.
 
+These programs will give you 3 outputs : 
+- the number of bytes in the result
+- the result in bytes 
+- the result in utf-8 or ascii encoding (which will frequently be nonsense)
+
 # Example
 
 We're going to use the python program to encode the message <MESSAGE_TO_REPLACE> using the key <KEY_TO_REPLACE>. Then we'll take the output and decode it using the C program :
