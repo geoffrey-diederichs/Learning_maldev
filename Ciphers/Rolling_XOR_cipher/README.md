@@ -15,7 +15,7 @@ These programs will give you 3 outputs :
 
 We're going to use the python program to encode the message <MESSAGE_TO_REPLACE>. Then we'll take the output and decode it using the C program :
 
-```sh
+```
 $ cat rolling_xor.py | grep "message ="
 message = b'<MESSAGE_TO_REPLACE>'
 $ python3 rolling_xor.py 0
