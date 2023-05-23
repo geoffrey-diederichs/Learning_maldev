@@ -15,7 +15,7 @@ These programs will give you 3 outputs :
 
 We're going to use the python program to encode the message <MESSAGE_TO_REPLACE> using the key <KEY_TO_REPLACE>. Then we'll take the output and decode it using the C program :
 
-```sh
+```
 $ cat xor.py | grep "message = b'"
 message = b'<MESSAGE_TO_REPLACE>'
 $ cat xor.py | grep "key ="
