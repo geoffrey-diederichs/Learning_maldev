@@ -1,4 +1,4 @@
-# Basic DLL injection
+# DLL injection
 
 This is an example of how to execute a DLL injection in Windows. All the code used is in /Source_code, /Demo contains a recording of the code in execution.
 
@@ -16,7 +16,7 @@ char DLL[] = "C:\\Users\\example\\dll.dll";
 
 To compile the dll with gcc, use the -shared flag. For example under linux :
 
-```sh
+```
 $ x86_64-w64-mingw32-gcc dll.c -o dll.dll -shared
 $ x86_64-w64-mingw32-gcc launcher.c -o launcher.exe 
 ```
