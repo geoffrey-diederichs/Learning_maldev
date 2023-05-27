@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include <windows.h>
-#include <string.h>
 
 unsigned char shellcode[] = <SHELLCODE_TO_REPLACE>;
 int shellcode_size = sizeof(shellcode);
