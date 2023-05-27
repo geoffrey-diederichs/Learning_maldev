@@ -23,14 +23,12 @@ int print_result(char *str, int len)
 
 int main(int argc, char* argv[])
 {
-	unsigned char encoded[message_size];	
-	
 	int i;
 	for (i = 0; i < message_size-1; i++)
-		encoded[i] = message[i] ^ key[i%(key_size-1)];
-	encoded[i] = '\0';
+		message[i] = message[i] ^ key[i%(key_size-1)];
+	message[i] = '\0';
 
-	print_result(encoded, message_size-1);
+	print_result(message, message_size-1);
 
 	return 0;
 }

@@ -6,7 +6,7 @@ def encode(message: bytearray, key: bytearray) -> bytearray :
     key_len = len(key)
     for i in range(0, len(message)):
         encoded.append(message[i] ^ key[i%(key_len)])
-
+    
     return encoded
 
 
