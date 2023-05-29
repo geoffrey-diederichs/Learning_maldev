@@ -30,7 +30,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD nReason, LPVOID lpReserved)
 		case DLL_PROCESS_DETACH:
         		break;
     		case DLL_THREAD_ATTACH:
-       			 break;
+       			break;
     		case DLL_THREAD_DETACH:
         		break;
     	}
