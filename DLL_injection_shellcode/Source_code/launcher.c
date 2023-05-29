@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
   HMODULE hKernel32 = GetModuleHandle("Kernel32");
   void *lb = GetProcAddress(hKernel32, "LoadLibraryA");
   
-  int pid = getPIDbyProcName("notepad.exe");
+  int pid = getPIDbyProcName("<PROG_TO_REPLACE>");
   pHandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, pid);
   rb = VirtualAllocEx(pHandle, NULL, dllLen, (MEM_RESERVE | MEM_COMMIT), PAGE_EXECUTE_READWRITE);
   WriteProcessMemory(pHandle, rb, DLL, dllLen, NULL);

@@ -8,6 +8,12 @@ The launcher will look for an ongoing instance of notepad.exe. If found, it will
 
 ## How to use
 
+Replace <PROG_TO_REPLACE> with the name of the program you want to attach the dll to in launcher.c at line 33. For example :
+
+```C
+int pid = getPIDbyProcName("notepad.exe");
+```
+
 Replace <PATH_TO_REPLACE> with the full path to where the dll will be stored in launcher.c at line 23. Use \\\\ instead of \\. For example :
 
 ```C
