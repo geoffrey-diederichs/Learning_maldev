@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <windows.h>
 #include <tlhelp32.h>
 
@@ -20,7 +17,7 @@ int getPIDbyProcName(const char* procName) {
     return pid;
 }
 
-char DLL[] = <PATH_TO_REPLACE>;
+char DLL[] = "<PATH_TO_REPLACE>";
 unsigned int dllLen = sizeof(DLL) + 1;
 
 typedef LPVOID memory_buffer;
