@@ -2,9 +2,9 @@
 
 This is an example of how to use a DLL injection to inject shellcode in Windows. All the code used is in /Source_code, /Demo contains a recording of the code in execution.
 
-The launcher will look for an ongoing instance of notepad.exe. If found, it will load the dll library (using the path given in the launcher's code) and attach it to the ongoing notepad. Doing so will execute the DDL_PROCESS_ATTACH section which runs the dll_injec function. This function will decode the shellcode using the given key, and then execute it using a process injection method.
+The launcher will look for an ongoing instance of the given program. If found, it will load the dll library (using the path given in the launcher's code) and attach it to the ongoing program. Doing so will execute the DDL_PROCESS_ATTACH section which runs the dll_injec function. This function will decode the shellcode using the given key, and then execute it using a process injection method.
 
-![Watch a demo here](https://raw.githubusercontent.com/geoffrey-diederichs/Red_team_tools/main/DLL_injection_shellcode/Demo/dll_injection_shellcode_demo.mp4)
+![Watch a demo here](https://raw.githubusercontent.com/geoffrey-diederichs/Red_team_tools/main/Concepts/03_DLL_injection_shellcode/Demo/dll_injection_shellcode_demo.mp4)
 
 ## How to use
 
