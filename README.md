@@ -1,9 +1,8 @@
-# RED TEAM TOOLS
+# Learning maldev
 
-Red team tools I'm working on. 
+Keeping track of some notions I learn about writing malware.
 
 ## Content
 
-- [Malwares](https://github.com/geoffrey-diederichs/Red_team_tools/tree/main/Malwares)
-- [Concepts](https://github.com/geoffrey-diederichs/Red_team_tools/tree/main/Concepts) : basic examples of concepts used to execute malicious code under Windows.
+- [Concepts](https://github.com/geoffrey-diederichs/Red_team_tools/tree/main/Concepts) : examples of concepts used to execute malicious code under Windows.
 - [Ciphers](https://github.com/geoffrey-diederichs/Red_team_tools/tree/main/Ciphers) : some algorithms to encode data.
