@@ -3,7 +3,7 @@
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD nReason, LPVOID lpReserved)
 {
-    switch (nReason){
+    switch (nReason) {
     case DLL_PROCESS_ATTACH:
         MessageBox(NULL,"p0wn3d","coucou",MB_OK);
         break;
@@ -14,5 +14,6 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD nReason, LPVOID lpReserved)
     case DLL_THREAD_DETACH:
         break;
     }
+    
     return TRUE;
 }
