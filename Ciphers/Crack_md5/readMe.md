@@ -4,7 +4,7 @@ Tries every entry in a given dictionnary to find out if it's the one used to pro
 
 ## How to use
 
-Replace <HASH> on line 8 with the hash to crack, <WORDLIST> on line 10 with the path to the dictionnary to use, and <WORDLIST_ENCODING> on line 10 with the encoding used in the dictionnary.
+Replace \<HASH\> on line 8 with the hash to crack, \<WORDLIST\> on line 10 with the path to the dictionnary to use, and <WORDLIST_ENCODING> on line 10 with the encoding used in the dictionnary.
 
 ## Example
 
