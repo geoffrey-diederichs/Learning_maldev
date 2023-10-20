@@ -1,4 +1,4 @@
-# Crack MD5
+# Crack md5
 
 Tries every entry in a given dictionnary to find out if it's the one used to produce a given md5 hash.
 
